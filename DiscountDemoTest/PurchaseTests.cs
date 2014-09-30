@@ -9,7 +9,7 @@ namespace Ch4_Project.Tests
         [TestMethod()]
         public void PurchaseTest()
         {
-            int[] unitCounts = {  1,   1,   1,   2,  10,  11,  20,  21,  50,  51, 100, 101, int.MaxValue};
+            int[] unitCounts = {  -1,   0,   1,   2,  10,  11,  20,  21,  50,  51, 100, 101, int.MaxValue};
             double[] expected= {1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.8, 0.7, 0.7, 0.6, 0.6, 0.5, 0.5 };
             
             var actual = new double[unitCounts.Length];
